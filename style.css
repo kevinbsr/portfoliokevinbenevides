@@ -39,16 +39,25 @@ ul {
   padding: 0;
 }
 
+header h1,
+header nav {
+  z-index: 1;
+}
+
 /* Header styles */
 header {
-  background-image: url(./assets/background.jpg);
-  /* background-color: #333; */
+  background: url(assets/background.jpg);
+  /* background: linear-gradient(0deg, #0084ff, #00172c), url(.jpg); */
   color: #fff;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   height: 30rem;
+  z-index: -1;
+}
+header backgroud {
+  
 }
 
 h1 {
@@ -205,27 +214,31 @@ input[type="submit"]:hover {
 section#other-contacts .social-buttons {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-  gap: 2rem;
+  gap: 2.5rem;
 }
 
 section#other-contacts .social-buttons .social-button {
-  /* max-width: 20rem; */
-  /* max-height: 1.5rem; */
   padding: 1rem;
 
   display: flex;
-  flex-direction: column;
-  gap: 1rem;
   justify-content: center;
   align-items: center;
 
+  color: #0084ff;
   background: #f2f2f2;
   border: .2rem solid #eaeaea;
   border-radius: 1rem;
+  transition: background 200ms;
 }
 
-section#other-contacts .social-buttons .social-button img {
-  max-width: 2rem;
+section#other-contacts .social-buttons .social-button:hover {
+  color: #f2f2f2;
+  background: #0084ff;
+  border: .2rem solid #eaeaea;
+}
+
+section#other-contacts .social-buttons .social-button i {
+  font-size: 2.5rem;
 }
 
 section#other-contacts .social-buttons .social-button p {
@@ -251,6 +264,9 @@ footer {
 }
 
 @media (max-width: 660px) {
+  header {
+    padding-inline: 2rem;
+  }
   section#projects .cards .card {
     max-width: 100%;
     margin: 0;
