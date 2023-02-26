@@ -22,7 +22,7 @@ const nameInput = document.getElementById('name');
 const emailInput = document.getElementById('email');
 const messageInput = document.getElementById('message');
 
-form.addEventListener('submit', (e) => {
+/* form.addEventListener('submit', (e) => {
 	e.preventDefault();
 
 	const formData = new FormData(form);
@@ -37,7 +37,7 @@ form.addEventListener('submit', (e) => {
 	nameInput.value = '';
 	emailInput.value = '';
 	messageInput.value = '';
-});
+}); */
 
 ScrollReveal({
 	origin: 'top',

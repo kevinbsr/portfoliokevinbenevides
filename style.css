@@ -219,7 +219,7 @@ textarea {
   border-radius: 1rem;
 }
 
-input[type="submit"] {
+button[type="submit"] {
   background: #0085ff;
   border-radius: 10px;
   font-weight: 600;
@@ -233,7 +233,7 @@ input[type="submit"] {
   transition: all 0.3s ease;
 }
 
-input[type="submit"]:hover {
+button[type="submit"]:hover {
   opacity: 0.8;
 }
 
