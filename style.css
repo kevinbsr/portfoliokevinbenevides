@@ -1,0 +1,263 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialised;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+:root {
+  font-size: 62.5%;
+  font-family: "Inter", sans-serif;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}
+
+/* Global styles */
+body {
+  font-size: 1.6rem;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* Header styles */
+header {
+  background-image: url(./assets/background.jpg);
+  /* background-color: #333; */
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 30rem;
+}
+
+h1 {
+  font-size: 4.8rem;
+  margin: 0;
+  padding: 0;
+}
+
+nav {
+  display: flex;
+  margin-top: 2rem;
+}
+
+nav ul {
+  display: flex;
+}
+
+nav li {
+  margin-right: 2rem;
+}
+
+nav a {
+  padding: 1rem;
+  transition: all 0.3s ease;
+  border-radius: 1rem;
+}
+
+nav a:hover {
+  background-color: #fff;
+  color: #333;
+  border-radius: 0.5rem;
+}
+
+/* Main styles */
+main {
+  max-width: 80rem;
+  margin: 5rem auto;
+  padding-inline: 2rem;
+  overflow: hidden;
+}
+
+main section#skills .skill-name-level {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  text-transform: uppercase;
+}
+
+.skill-experience-bar img {
+  max-width: 100%;
+}
+
+section#projects .cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+}
+
+section#projects .cards .card {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 1.6rem;
+  gap: 1.6rem;
+
+  max-width: 37.8rem;
+
+  background: #f2f2f2;
+  border: 0.1rem solid #eaeaea;
+  border-radius: 1rem;
+}
+
+section#projects .cards .card img {
+  width: 100%;
+  border-radius: 1rem;
+}
+
+h2 {
+  font-size: 3.2rem;
+  margin-top: 5rem;
+  margin-bottom: 3rem;
+}
+
+p {
+  margin-bottom: 2rem;
+}
+
+ul li {
+  margin-bottom: 2rem;
+}
+
+form {
+  margin-top: 2rem;
+}
+
+label {
+  display: block;
+  margin-bottom: 1rem;
+}
+
+section#contact form {
+  display: flex;
+  flex-direction: column;
+}
+
+section#contact p a {
+  color: #0185ff;
+  font-weight: 600;
+}
+input[type="text"],
+input[type="email"] {
+  padding: 1rem;
+  margin-bottom: 2rem;
+
+  width: 100%;
+  height: 5rem;
+
+  background: #f2f2f2;
+  border: 1px solid #eaeaea;
+  border-radius: 1rem;
+}
+
+textarea {
+  padding: 1rem;
+  margin-bottom: 2rem;
+
+  max-width: 100%;
+  min-height: 10rem;
+
+  font-family: Inter, sans-serif;
+  background: #f2f2f2;
+  border: 1px solid #eaeaea;
+  border-radius: 1rem;
+}
+
+input[type="submit"] {
+  background: #0085ff;
+  border-radius: 10px;
+  font-weight: 600;
+  height: 4rem;
+
+  color: #fff;
+  padding: 1rem;
+  border: none;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+input[type="submit"]:hover {
+  opacity: 0.8;
+}
+
+section#other-contacts .social-buttons {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  gap: 2rem;
+}
+
+section#other-contacts .social-buttons .social-button {
+  /* max-width: 20rem; */
+  /* max-height: 1.5rem; */
+  padding: 1rem;
+
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  justify-content: center;
+  align-items: center;
+
+  background: #f2f2f2;
+  border: .2rem solid #eaeaea;
+  border-radius: 1rem;
+}
+
+section#other-contacts .social-buttons .social-button img {
+  max-width: 2rem;
+}
+
+section#other-contacts .social-buttons .social-button p {
+  margin: 0;
+  color: #0084ff;
+  font-size: 1.2rem;
+}
+
+/* Footer styles */
+footer {
+  background: transparent;
+  border-top: 1px solid #333;
+  color: #000000;
+  text-align: center;
+  padding: 2rem;
+  margin-top: 5rem;
+}
+
+@media (max-width: 1024px) {
+  :root {
+    font-size: 50%;
+  }
+}
+
+@media (max-width: 660px) {
+  section#projects .cards .card {
+    max-width: 100%;
+    margin: 0;
+  }
+  section#projects .cards {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
