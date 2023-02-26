@@ -4,6 +4,7 @@
   box-sizing: border-box;
   -webkit-font-smoothing: antialised;
   -moz-osx-font-smoothing: grayscale;
+  scroll-behavior: smooth;
 }
 
 :root {
@@ -55,9 +56,6 @@ header {
   justify-content: center;
   height: 30rem;
   z-index: -1;
-}
-header backgroud {
-  
 }
 
 h1 {
@@ -228,7 +226,7 @@ section#other-contacts .social-buttons .social-button {
   background: #f2f2f2;
   border: .2rem solid #eaeaea;
   border-radius: 1rem;
-  transition: background 200ms;
+  transition: background .3s;
 }
 
 section#other-contacts .social-buttons .social-button:hover {
@@ -257,9 +255,36 @@ footer {
   margin-top: 5rem;
 }
 
+
+#top-button {
+  display: none;
+  position: fixed; 
+  bottom: 2rem; 
+  right: 3rem; 
+  z-index: 99; 
+  border: none; 
+  outline: none; 
+  background-color: #0084ff; 
+  color: white; 
+  cursor: pointer; 
+  padding: 1.5rem; 
+  border-radius: 1rem; 
+  font-size: 2rem;
+  height: fit-content;
+  transform: all ease .3s;
+}
+
+#top-button:hover {
+  opacity: .8;
+}
+
 @media (max-width: 1024px) {
   :root {
     font-size: 50%;
+  }
+
+  #top-button {
+    bottom: 1rem;
   }
 }
 
