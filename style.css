@@ -58,10 +58,14 @@ header {
   z-index: -1;
 }
 
-h1 {
+header h1 {
   font-size: 4.8rem;
-  margin: 0;
-  padding: 0;
+  text-transform: uppercase;
+}
+
+header p {
+  font-weight: 600;
+  margin-top: 1rem;
 }
 
 nav {
@@ -139,6 +143,7 @@ section#projects .cards .card .card-buttons {
   gap: 1rem;
   width: 100%;
   align-items: center;
+  bottom: 0;
 }
 
 section#projects .cards .card .card-buttons a {
