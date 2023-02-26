@@ -133,6 +133,29 @@ section#projects .cards .card img {
   border-radius: 1rem;
 }
 
+section#projects .cards .card .card-buttons {
+  color: #000000;
+  display: flex;
+  gap: 1rem;
+  width: 100%;
+  align-items: center;
+}
+
+section#projects .cards .card .card-buttons a {
+  color: white;
+  text-decoration: none;
+
+  background: #0084ff;
+  padding: 1rem;
+  border: 1px solid #0085ff;
+  border-radius: 0.5rem;
+  transform: all ease 0.3s;
+}
+
+section#projects .cards .card .card-buttons a:hover {
+  opacity: 0.8;
+}
+
 h2 {
   font-size: 3.2rem;
   margin-top: 5rem;
@@ -224,15 +247,15 @@ section#other-contacts .social-buttons .social-button {
 
   color: #0084ff;
   background: #f2f2f2;
-  border: .2rem solid #eaeaea;
+  border: 0.2rem solid #eaeaea;
   border-radius: 1rem;
-  transition: background .3s;
+  transition: background 0.3s;
 }
 
 section#other-contacts .social-buttons .social-button:hover {
   color: #f2f2f2;
   background: #0084ff;
-  border: .2rem solid #eaeaea;
+  border: 0.2rem solid #eaeaea;
 }
 
 section#other-contacts .social-buttons .social-button i {
@@ -255,27 +278,26 @@ footer {
   margin-top: 5rem;
 }
 
-
 #top-button {
   display: none;
-  position: fixed; 
-  bottom: 2rem; 
-  right: 3rem; 
-  z-index: 99; 
-  border: none; 
-  outline: none; 
-  background-color: #0084ff; 
-  color: white; 
-  cursor: pointer; 
-  padding: 1.5rem; 
-  border-radius: 1rem; 
+  position: fixed;
+  bottom: 2rem;
+  right: 3rem;
+  z-index: 99;
+  border: none;
+  outline: none;
+  background-color: #0084ff;
+  color: white;
+  cursor: pointer;
+  padding: 1.5rem;
+  border-radius: 1rem;
   font-size: 2rem;
   height: fit-content;
-  transform: all ease .3s;
+  transform: all ease 0.3s;
 }
 
 #top-button:hover {
-  opacity: .8;
+  opacity: 0.8;
 }
 
 @media (max-width: 1024px) {
