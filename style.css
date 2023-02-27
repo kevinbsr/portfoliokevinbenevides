@@ -108,8 +108,89 @@ main section#skills .skill-name-level {
   text-transform: uppercase;
 }
 
-.skill-experience-bar img {
-  max-width: 100%;
+main section#skills .skill-name-level p {
+  font-size: 1.4 rem;
+}
+
+.bar {
+  position: relative;
+
+  border: 0.1rem solid #0084ff;
+
+  border-radius: 0.4rem;
+}
+
+.bar div {
+  position: relative;
+  width: 0;
+  height: 9px;
+  border-radius: 0.4rem;
+  background-color: #0084ff;
+}
+
+#html-bar {
+  animation: html-fill 2s forwards;
+}
+@keyframes html-fill {
+  100% {
+    width: 60%;
+  }
+}
+#css-bar {
+  animation: css-fill 2s forwards;
+}
+@keyframes css-fill {
+  100% {
+    width: 45%;
+  }
+}
+#javascript-bar {
+  animation: javascript-fill 2s forwards;
+}
+@keyframes javascript-fill {
+  100% {
+    width: 50%;
+  }
+}
+#figma-bar {
+  animation: figma-fill 2s forwards;
+}
+@keyframes figma-fill {
+  100% {
+    width: 65%;
+  }
+}
+#linux-bar {
+  animation: linux-fill 2s forwards;
+}
+@keyframes linux-fill {
+  100% {
+    width: 70%;
+  }
+}
+#nodejs-bar {
+  animation: nodejs-fill 2s forwards;
+}
+@keyframes nodejs-fill {
+  100% {
+    width: 25%;
+  }
+}
+#react-bar {
+  animation: react-fill 2s forwards;
+}
+@keyframes react-fill {
+  100% {
+    width: 20%;
+  }
+}
+#reactnative-bar {
+  animation: reactnative-fill 2s forwards;
+}
+@keyframes reactnative-fill {
+  100% {
+    width: 15%;
+  }
 }
 
 section#projects .cards {
