@@ -3,12 +3,12 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="shortcut icon" href="../public/kb-wb.svg" type="image/x-icon">
+  <link rel="shortcut icon" href="./public/assets/images/favicon.svg" type="image/x-icon">
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=chevron_right" />
 </head>
 <body class="flex flex-col min-h-screen">
-  <header class="fixed top-0 w-full bg-black text-white font-bold h-[80px] flex justify-between items-center 2xl:px-96 lg:px-8 px-4 border-b border-neutral-900">
+  <header class="fixed top-0 w-full bg-black z-50 text-white font-bold h-[80px] flex justify-between items-center 2xl:px-96 lg:px-8 px-4 border-b border-neutral-900">
     <div id="profile-pic" class="flex items-center">
         <img src="./public/assets/images/profile-pic.jpg" alt="profile pic of Kevin Benevides" class="w-16 max-lg:max-md:hidden rounded-full border border-neutral-600 p-0.5">
         <div id="text" class="ml-4">
@@ -23,13 +23,13 @@
   </header>
   <main class="bg-black text-white mt-[80px]">
     <div id="wrapper" class="2xl:px-96 lg:px-8 px-4">
-        <div id="about-me" class="my-6 text-neutral-300 border border-neutral-800 p-10 max-sm:p-6 rounded-lg">
+        <div id="about-me" class="slideLeft my-6 text-neutral-300 border border-neutral-800 p-10 max-sm:p-6 rounded-lg">
             <h1 class="text-3xl font-bold text-white">Sobre mim</h1>
             <p class="mt-4">Olá, meu nome é Kevin Benevides. Sou formado em Técnico em Informática pelo Instituto Federal Fluminense (IFF) e atualmente curso Engenharia de Software na FIAP. Tenho uma sólida experiência profissional que inclui atuação como monitor de programação no IFF, instrutor de iniciação tecnológica e robótica no projeto Clube ITec, técnico de suporte e analista NOC na Work Banda Larga, e hoje, como Analista de Suporte na Compass.UOL.</p>
             <p class="mt-4">Atualmente, meu principal objetivo é me tornar um profissional completo na área de DevOps, unindo as melhores práticas de desenvolvimento e operações para entregar soluções robustas e eficientes. Sou movido pela constante busca por aprendizado e aprimoramento, sempre me preparando para enfrentar novos desafios e agregar valor ao que faço.</p>
             <p class="mt-4">Meus valores incluem melhoria contínua e inovação, e meu foco de longo prazo é construir soluções de alto impacto e aprofundar meu domínio técnico em desenvolvimento e operações.</p>
         </div>
-        <div id="skills" class="my-6 text-neutral-300 border border-neutral-800 p-10 max-sm:p-6 rounded-lg">
+        <div id="skills" class="slideLeft my-6 text-neutral-300 border border-neutral-800 p-10 max-sm:p-6 rounded-lg">
             <h1 class="text-3xl font-bold mb-4 text-white">Habilidades</h1>
             <div id="techs">
               <div id="programming-languages">
@@ -144,7 +144,7 @@
               </div>
             </div>
         </div>
-        <div id="projects" class="my-6 text-neutral-300 border border-neutral-800 p-10 max-sm:p-6 rounded-lg">
+        <div id="projects" class="slideLeft my-6 text-neutral-300 border border-neutral-800 p-10 max-sm:p-6 rounded-lg">
             <h1 class="text-3xl font-bold mb-4 text-white">Projetos</h1>
             <div id="project-cards" class="grid lg:grid-cols-2 gap-4"> 
               <div id="card" class="border border-neutral-700 rounded-lg p-8 max-sm:p-4">
@@ -160,7 +160,7 @@
               </div>
             </div>
         </div> 
-        <div id="contacts" class="my-6 text-neutral-300 border border-neutral-800 p-10 max-sm:p-6 rounded-lg">
+        <div id="contacts" class="slideLeft my-6 text-neutral-300 border border-neutral-800 p-10 max-sm:p-6 rounded-lg">
             <h1 class="text-3xl font-bold mb-4 text-white">Contatos</h1>
             <div>
               <div id="contact" class="flex justify-between border border-neutral-800 rounded-md p-4 align-middle">
@@ -182,5 +182,7 @@
   <footer class="mt-auto bg-neutral-950 text-white p-4 text-center">
     <p>made by @kevinbenevides</p>
   </footer>
+  <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
+  <script src="public/assets/js/script.js"></script>
 </body>
 </html>

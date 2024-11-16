@@ -1,11 +1,7 @@
-document.addEventListener("DOMContentLoaded", function() {
-  var currentUrl = window.location.href;
+var slideLeft = {
+  distance: '150%',
+  origin: 'left',
+  opacity: 0,
+  };
 
-  var navLinks = document.querySelectorAll("header a");
-
-  navLinks.forEach(function(link) {
-    if (link.href === currentUrl) {
-      link.classList.add("active");
-    };
-  });
-});
+  ScrollReveal().reveal('.slideLeft', slideLeft);
